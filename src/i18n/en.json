@@ -1,0 +1,354 @@
+{
+  "nav": {
+    "home": "Home",
+    "programs": "Programs",
+    "trainers": "Trainers",
+    "portal": "Portal",
+    "academy": "Academy",
+    "pricing": "Pricing",
+    "locations": "Locations",
+    "contact": "Contact",
+    "signup_cta": "Start training",
+    "tagline": "Tbilisi · est. 2019"
+  },
+  "stance": {
+    "eyebrow": "STANCE",
+    "headline_a": "The work compounds.",
+    "headline_b": "Quiet, considered,",
+    "headline_c_pre": "every ",
+    "headline_c_accent": "day.",
+    "body": "Two thousand members. Two houses in Tbilisi. Fifteen certified coaches. Form before weight, weight before ego.",
+    "body_stats": "Two thousand members. Two houses in Tbilisi. Fifteen certified coaches.",
+    "body_principle": "Form before weight, weight before ego."
+  },
+  "hero": {
+    "eyebrow": "Mata · Tbilisi",
+    "title": "Stronger\nevery day.",
+    "title_line1": "Stronger",
+    "title_line2": "every day.",
+    "cta_primary": "Start training",
+    "cta_secondary": "View memberships",
+    "subtitle": "A house for serious training. Built around stillness, symmetry, and the work that compounds.",
+    "scroll": "scroll",
+    "stats": {
+      "trainers": "trainers",
+      "members": "members",
+      "locations": "locations"
+    }
+  },
+  "trust": {
+    "trainers": "trainers",
+    "members": "members",
+    "locations": "locations"
+  },
+  "manifesto": {
+    "eyebrow": "MANIFESTO",
+    "headline": "A gym is not a mirror and a barbell. It is a practice. A daily conversation between body and person, who decides each morning to come back.",
+    "principles": [
+      {
+        "n": "01",
+        "title": "Coached, not curated",
+        "desc": "Form first. Weight after. Ego, never."
+      },
+      {
+        "n": "02",
+        "title": "A room for everyone",
+        "desc": "Pilates, strength, cardio, recovery. Under one roof."
+      },
+      {
+        "n": "03",
+        "title": "Built for Tbilisi",
+        "desc": "Two locations. One community. Open until 23:00."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "A LETTER FROM THE FLOOR",
+    "name": "Tato Joglidze",
+    "role": "Head Coach · Founder, Mata Academy",
+    "quote": "I built Mata for the work I wanted to do every day. Form before weight. People before metrics. The room is small enough that I still know your name.",
+    "signature": "Tato",
+    "signature_meta": "EST. 2019 · TBILISI",
+    "cta": "Step into Mata Academy"
+  },
+  "academy": {
+    "eyebrow": "MATA / ACADEMY · APPLY",
+    "title_a": "Coaches are ",
+    "title_accent": "made on the floor",
+    "title_b": ".",
+    "lede": "Twelve weeks of mentorship under the head coach. Programming, technique, coaching craft. Two cohorts a year, by application.",
+    "cta_apply": "APPLY NOW",
+    "cta_become_coach": "BECOME A COACH",
+    "cta_program": "READ THE PROGRAM",
+    "stance_eyebrow": "STANCE",
+    "stance_headline": "We don't certify. We mentor.",
+    "stance_body_1": "A weekend course makes a certificate. A coach is something else. The Academy is structured around the work that actually changes how you teach: thousands of reps watched, programming written and rewritten, conversations with members who trust you with their week.",
+    "stance_body_2": "Two cohorts a year. Eight seats each. The bar is real, and the work is the curriculum.",
+    "program_eyebrow": "THE TWELVE WEEKS",
+    "program_headline": "What you actually do.",
+    "weeks_1_4_title": "Foundation",
+    "weeks_1_4_desc": "Anatomy under load. Movement screens. Coaching language. Shadow the head coach, three sessions a week.",
+    "weeks_5_8_title": "Programming",
+    "weeks_5_8_desc": "You write the cycles. You defend the choices. Two members assigned. Weekly review with faculty.",
+    "weeks_9_12_title": "Floor time",
+    "weeks_9_12_desc": "You coach. The mentor watches. Corrections come in private. By week twelve you run a full block alone.",
+    "faculty_eyebrow": "FACULTY",
+    "faculty_headline": "Who teaches.",
+    "frames_eyebrow": "FROM THE FLOOR",
+    "frames_headline": "Three frames.",
+    "cta_eyebrow": "APPLY · MATA ACADEMY",
+    "cta_headline_a": "Eight seats. ",
+    "cta_headline_accent": "Two cohorts a year",
+    "cta_headline_b": ".",
+    "cta_body": "Send us a short letter: who you've coached, what you read, why this room. We reply to every application within two weeks.",
+    "cta_back": "BACK TO LANDING"
+  },
+  "programs": {
+    "eyebrow": "THE SIX ROOMS",
+    "title_a": "Disciplines,",
+    "title_accent": "not classes",
+    "title_b": ".",
+    "see_membership": "SEE THE MEMBERSHIP",
+    "items": [
+      {
+        "n": "01",
+        "en": "Strength",
+        "ka": "ძალისმიერი",
+        "summary": "Powerlifting, hypertrophy, Olympic. Every set with a coach watching.",
+        "tags": ["Squat", "Press", "Pull"],
+        "img": "STRENGTH FLOOR"
+      },
+      {
+        "n": "02",
+        "en": "Pilates",
+        "ka": "პილატესი",
+        "summary": "Reformer, mat, mobility. A separate studio under the vaulted hall.",
+        "tags": ["Reformer", "Mat", "Mobility"],
+        "img": "PILATES STUDIO"
+      },
+      {
+        "n": "03",
+        "en": "Conditioning",
+        "ka": "კარდიო",
+        "summary": "Intervals, rowing, runs. A heart rate that means something.",
+        "tags": ["Row", "Run", "Bike"],
+        "img": "CARDIO LOFT"
+      },
+      {
+        "n": "04",
+        "en": "CrossFit",
+        "ka": "კროსფიტი",
+        "summary": "Functional strength at high intensity, in a class format.",
+        "tags": ["WOD", "Box", "AMRAP"],
+        "img": "CROSSFIT BOX"
+      },
+      {
+        "n": "05",
+        "en": "Academy",
+        "ka": "აკადემია",
+        "summary": "12-week mentorship with the head coach. By application only.",
+        "tags": ["12 wk", "1:1", "Cohort"],
+        "img": "MATA ACADEMY"
+      },
+      {
+        "n": "06",
+        "en": "Nutrition",
+        "ka": "კვება",
+        "summary": "An individual plan from the in-house nutritionist. Training continued in the kitchen.",
+        "tags": ["Plan", "Coach", "Track"],
+        "img": "NUTRITION DESK"
+      }
+    ]
+  },
+  "trainers": {
+    "eyebrow": "THE COACHES",
+    "title_a": "We hire coaches who ",
+    "title_accent": "actually coach",
+    "title_b": ".",
+    "body": "We pick coaches by how they teach, not by how they look in a mirror.",
+    "experience_suffix": "experience",
+    "book_session": "Book a session"
+  },
+  "portal": {
+    "eyebrow": "MATA PORTAL",
+    "title_a": "A house in your ",
+    "title_accent": "pocket",
+    "title_b": ".",
+    "subtitle": "A mobile companion: your training plan, nutrition, bookings, and exclusive video lessons in one place.",
+    "captions": {
+      "plan": "Your weekly plan, ready to read",
+      "meals": "Coach-built nutrition, day by day",
+      "videos": "Exclusive video lessons",
+      "bookings": "Book a class in one tap"
+    }
+  },
+  "pricing": {
+    "eyebrow": "MEMBERSHIP",
+    "title_a": "Two ",
+    "title_accent": "doors",
+    "title_b": ".",
+    "subtitle": "Two ways in. No multi-year contracts; cancel with seven days' notice.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "annual_badge": "-2 months",
+    "tiers": [
+      {
+        "key": "drop-in",
+        "name": "Drop-in",
+        "cad": "CASUAL",
+        "unit": "₾ / visit",
+        "desc": "First visit free. Single visit ₾25; book at the front desk.",
+        "includes": [
+          "Every room",
+          "Shower · locker",
+          "No card required"
+        ],
+        "ctaLabel": "BOOK A VISIT"
+      },
+      {
+        "key": "member",
+        "name": "Member",
+        "cad": "MOST CHOSEN",
+        "unit_monthly": "₾ / month",
+        "unit_annual": "₾ / year",
+        "desc": "The full house. Every discipline, both locations, one card.",
+        "includes": [
+          "Every discipline",
+          "Both locations",
+          "Guest pass × 2 / month",
+          "Video lessons"
+        ],
+        "ctaLabel": "JOIN AS MEMBER"
+      },
+      {
+        "key": "atelier",
+        "name": "By Application",
+        "cad": "ATELIER",
+        "unit_monthly": "₾ / month",
+        "unit_annual": "₾ / year",
+        "desc": "1:1 with the head coach, twice a week. Selective access.",
+        "includes": [
+          "2× personal sessions",
+          "Quarterly assessment",
+          "Nutrition + training plan",
+          "Everything in Member"
+        ],
+        "ctaLabel": "REQUEST APPLICATION"
+      },
+      {
+        "key": "academy",
+        "name": "Mata Academy",
+        "cad": "BECOME A COACH",
+        "unit": "BY APPLICATION",
+        "desc": "We train coaches. A 12-week program, mentor head coach, then your own room.",
+        "includes": [
+          "12-week program",
+          "Mentor · internship",
+          "Certification",
+          "Position at Mata (selective)"
+        ],
+        "ctaLabel": "STEP INTO ACADEMY"
+      }
+    ]
+  },
+  "locations": {
+    "eyebrow": "VISIT · TBILISI",
+    "title_a": "Two houses in ",
+    "title_accent": "Tbilisi",
+    "title_b": ".",
+    "body": "Both houses open every day, 06:00–23:00. The first visit is free.",
+    "open_now": "Open now",
+    "contact": {
+      "call": "CALL",
+      "write": "WRITE",
+      "follow": "FOLLOW"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "VOICES",
+    "title_a": "From the ",
+    "title_accent": "floor",
+    "title_b": ".",
+    "items": [
+      {
+        "q": "Three months in, I changed weight and mood. Mata is a real team.",
+        "n": "Ani K.",
+        "m": "1-year member"
+      },
+      {
+        "q": "The first gym I don't want to leave. Personal attention in everything.",
+        "n": "Levan M.",
+        "m": "8-month member"
+      },
+      {
+        "q": "The portal is magic: plan, videos, bookings in one place.",
+        "n": "Tamar S.",
+        "m": "2-year member"
+      },
+      {
+        "q": "The CrossFit classes are the best in Tbilisi. Energy and community.",
+        "n": "Davit O.",
+        "m": "6-month member"
+      },
+      {
+        "q": "The coaches catch every detail. Results show.",
+        "n": "Nika R.",
+        "m": "1.5-year member"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS",
+    "title": "Common asks.",
+    "items": [
+      {
+        "q": "How do I start training at Mata?",
+        "a": "Book a free intro visit online or walk into either house. A coach will meet you and help you start."
+      },
+      {
+        "q": "Can I pause my membership?",
+        "a": "Yes. Member and Atelier tiers can pause for up to 30 days per year."
+      },
+      {
+        "q": "Is there a free trial?",
+        "a": "Yes. Every new member gets one free full visit, with a coach."
+      },
+      {
+        "q": "I have an injury, can I train?",
+        "a": "Our certified coaches build a safe plan in coordination with your physiotherapist."
+      },
+      {
+        "q": "How does the Mata portal work?",
+        "a": "An iOS and Android app: your plan, bookings, nutrition, and video lessons for Members."
+      },
+      {
+        "q": "Do you have a kids' program?",
+        "a": "Yes. Mata Kids for ages 7–14, weekends at Moscow Ave. 29."
+      }
+    ]
+  },
+  "final_cta": {
+    "eyebrow": "START TODAY",
+    "headline_a": "Show up.",
+    "headline_b_pre": "",
+    "headline_accent": "Move",
+    "headline_b_post": " with intention.",
+    "body": "Your first visit is free. Pick a time, show up. We'll take care of the rest.",
+    "cta_primary": "START 7-DAY TRIAL",
+    "cta_secondary": "BOOK A TOUR"
+  },
+  "not_found": {
+    "eyebrow": "404 · NOT THIS DOOR",
+    "headline_a": "Wrong",
+    "headline_accent": "door.",
+    "body": "The page you're after isn't here. Try the front door; that's where everything starts.",
+    "cta_primary": "Back to the gym",
+    "cta_secondary": "View memberships"
+  },
+  "footer": {
+    "tagline": "MATA FITNESS",
+    "established": "EST. 2019 · TBILISI",
+    "quote": "Show up. Move with intention. The rest is repetition.",
+    "copyright": "© {{year}} Mata Fitness · Tbilisi · Made with iron and intention"
+  }
+}

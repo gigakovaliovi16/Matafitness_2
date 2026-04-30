@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="3" fill="#0A0F1C"/>
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="2.25" stroke="#7AA2F7" stroke-width="1.5"/>
+  <!-- Lucide Activity icon (24×24 viewBox) scaled to fit 20×20 centered in 32×32 -->
+  <g transform="translate(6,6) scale(0.8333)">
+    <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" stroke="#93B4F9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

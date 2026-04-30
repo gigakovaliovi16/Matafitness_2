@@ -1,0 +1,26 @@
+:root {
+  /* Brand — verbatim from Matafitness production */
+  --mata-ink: #1d1d27;
+  --mata-ink-soft: #2a2a36;
+  --mata-navy-900: #0b0b18;
+  --mata-navy-800: #141428;
+  --mata-navy-700: #1c1c36;
+  --mata-amber: #f7931e;
+  --mata-amber-soft: #ffb04a;
+  --mata-amber-deep: #e3840f;
+  --mata-paper: #f3ede0;
+  --mata-paper-soft: #ebe4d2;
+  --mata-paper-warm: #e9e3d6;
+
+  /* Fonts */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-geo: 'Noto Serif Georgian', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Type scale */
+  --type-display: clamp(34px, 7vw, 120px);
+  --type-pilcrow: 11px;
+
+  color-scheme: dark;
+}
