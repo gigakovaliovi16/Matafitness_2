@@ -42,19 +42,19 @@ export function PhoneModel({
         <meshStandardMaterial color="#0b0b18" metalness={0.6} roughness={0.32} />
       </mesh>
 
-      {/* Screen plane */}
-      <mesh position={[0, 0, depth + 0.001]}>
-        <planeGeometry args={[screenW, screenH]} />
-        <meshBasicMaterial color="#000" toneMapped={false} />
-      </mesh>
-
-      {/* Screen content */}
-      <group position={[0, 0, depth + 0.002]}>{children}</group>
+      {/* Screen content (flipbook plane) sits clearly above the body face */}
+      <group position={[0, 0, depth + 0.01]}>
+        <mesh renderOrder={1}>
+          <planeGeometry args={[screenW, screenH]} />
+          <meshBasicMaterial color="#0b0b18" toneMapped={false} depthTest={false} />
+        </mesh>
+        <group position={[0, 0, 0.001]}>{children}</group>
+      </group>
 
       {/* Notch */}
-      <mesh position={[0, height / 2 - bezel - 0.06, depth + 0.003]}>
-        <planeGeometry args={[0.34, 0.06]} />
-        <meshBasicMaterial color="#0b0b18" />
+      <mesh position={[0, height / 2 - bezel - 0.06, depth + 0.02]} renderOrder={2}>
+        <planeGeometry args={[0.34, 0.05]} />
+        <meshBasicMaterial color="#0b0b18" depthTest={false} />
       </mesh>
 
       {/* Amber rim glow */}

@@ -34,16 +34,24 @@ export function StageLocations({ windowRange }: { windowRange: [number, number] 
     <group ref={groupRef}>
       <mesh geometry={geom}>
         <meshStandardMaterial
-          color="#141428"
+          color="#0f0f1c"
           emissive="#f7931e"
-          emissiveIntensity={0.08}
-          roughness={0.9}
+          emissiveIntensity={0.02}
+          roughness={0.95}
           metalness={0.0}
-          wireframe={false}
+          transparent
+          opacity={0.5}
+          depthWrite={false}
         />
       </mesh>
       <mesh geometry={geom}>
-        <meshBasicMaterial color="#f7931e" wireframe transparent opacity={0.18} />
+        <meshBasicMaterial
+          color="#f7931e"
+          wireframe
+          transparent
+          opacity={0.06}
+          depthWrite={false}
+        />
       </mesh>
       {/* Two amber pins */}
       {[
@@ -51,7 +59,7 @@ export function StageLocations({ windowRange }: { windowRange: [number, number] 
         [2.0, -0.4, 0.4],
       ].map((p, i) => (
         <mesh key={i} position={p as [number, number, number]}>
-          <sphereGeometry args={[0.09, 16, 16]} />
+          <sphereGeometry args={[0.06, 16, 16]} />
           <meshBasicMaterial color="#ffb04a" toneMapped={false} />
         </mesh>
       ))}

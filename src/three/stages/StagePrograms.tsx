@@ -16,9 +16,9 @@ export function StagePrograms({ windowRange }: { windowRange: [number, number] }
       Array.from({ length: 6 }, (_, i) => {
         const angle = (i / 6) * Math.PI * 2;
         return {
-          radius: 3.2,
+          radius: 5.4,
           angle,
-          y: ((i % 3) - 1) * 0.4,
+          y: ((i % 3) - 1) * 0.6,
           tilt: (i - 3) * 0.06,
         };
       }),
@@ -29,11 +29,11 @@ export function StagePrograms({ windowRange }: { windowRange: [number, number] }
     const { active, local } = getStage();
     if (!groupRef.current) return;
     groupRef.current.visible = active > 0.001;
-    groupRef.current.rotation.y += dt * 0.06;
-    groupRef.current.position.z = -2 + local * 1.4;
+    groupRef.current.rotation.y += dt * 0.04;
+    groupRef.current.position.z = -4 + local * 0.6;
     matsRef.current.forEach((m, i) => {
       if (!m) return;
-      m.opacity = active * (0.55 + 0.45 * Math.sin(local * Math.PI + i));
+      m.opacity = active * 0.22 * (0.5 + 0.5 * Math.sin(local * Math.PI + i));
     });
   });
 
@@ -48,18 +48,19 @@ export function StagePrograms({ windowRange }: { windowRange: [number, number] }
             position={[x, s.y, z]}
             rotation={[s.tilt, -s.angle + Math.PI / 2, 0]}
           >
-            <boxGeometry args={[1.4, 2.0, 0.04]} />
+            <boxGeometry args={[0.8, 1.2, 0.03]} />
             <meshStandardMaterial
               ref={(m) => {
                 if (m) matsRef.current[i] = m;
               }}
               color="#1c1c36"
               emissive="#f7931e"
-              emissiveIntensity={0.18}
-              roughness={0.55}
+              emissiveIntensity={0.12}
+              roughness={0.7}
               metalness={0.1}
               transparent
-              opacity={0.85}
+              opacity={0.2}
+              depthWrite={false}
             />
           </mesh>
         );

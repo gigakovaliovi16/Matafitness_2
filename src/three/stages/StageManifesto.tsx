@@ -17,13 +17,13 @@ export function StageManifesto({ windowRange }: { windowRange: [number, number] 
     const points: THREE.Vector3[] = [];
     for (let i = 0; i <= 80; i++) {
       const t = i / 80;
-      const x = Math.cos(t * Math.PI * 2.4) * (1.6 + t * 0.6);
-      const y = Math.sin(t * Math.PI * 1.8) * 1.6 - 0.2 + t * 0.4;
-      const z = -1 + Math.sin(t * Math.PI * 3) * 0.4;
+      const x = Math.cos(t * Math.PI * 2.4) * (2.4 + t * 0.6) - 2.4;
+      const y = Math.sin(t * Math.PI * 1.8) * 1.4 - 0.2 + t * 0.4;
+      const z = -2.5 + Math.sin(t * Math.PI * 3) * 0.4;
       points.push(new THREE.Vector3(x, y, z));
     }
     const curve = new THREE.CatmullRomCurve3(points, false, 'centripetal');
-    const tube = new THREE.TubeGeometry(curve, 240, 0.022, 8, false);
+    const tube = new THREE.TubeGeometry(curve, 240, 0.012, 8, false);
     return { tube, drawCount: tube.index ? tube.index.count : 0 };
   }, []);
 
@@ -39,7 +39,7 @@ export function StageManifesto({ windowRange }: { windowRange: [number, number] 
       tube.setDrawRange(0, draw);
     }
     if (matRef.current) {
-      matRef.current.opacity = active;
+      matRef.current.opacity = active * 0.55;
     }
   });
 
@@ -57,11 +57,11 @@ export function StageManifesto({ windowRange }: { windowRange: [number, number] 
         />
       </mesh>
       {/* glow halo */}
-      <mesh geometry={tube} scale={[1.06, 1.06, 1.06]}>
+      <mesh geometry={tube} scale={[1.4, 1.4, 1.4]}>
         <meshBasicMaterial
           color="#ffb04a"
           transparent
-          opacity={0.18}
+          opacity={0.08}
           blending={THREE.AdditiveBlending}
           depthWrite={false}
           toneMapped={false}

@@ -40,12 +40,12 @@ export function SceneDirector() {
 
   return (
     <>
-      <StageHero windowRange={[0.0, 0.12]} />
-      <StageManifesto windowRange={[0.1, 0.26]} />
-      <StagePrograms windowRange={[0.24, 0.42]} />
-      <StageVoices windowRange={[0.4, 0.56]} />
-      <StagePortal windowRange={[0.55, 0.72]} />
-      <StageLocations windowRange={[0.72, 0.9]} />
+      <StageHero windowRange={[0.0, 0.08]} />
+      <StageManifesto windowRange={[0.14, 0.22]} />
+      <StagePrograms windowRange={[0.22, 0.32]} />
+      <StagePortal windowRange={[0.5, 0.6]} />
+      <StageLocations windowRange={[0.72, 0.82]} />
+      <StageVoices windowRange={[0.82, 0.9]} />
     </>
   );
 }

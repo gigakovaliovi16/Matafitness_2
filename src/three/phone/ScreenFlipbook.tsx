@@ -1,12 +1,13 @@
-import { useFrame, useLoader } from '@react-three/fiber';
-import { useEffect, useRef, useState } from 'react';
+import { useFrame } from '@react-three/fiber';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { TextureLoader } from 'three';
 
 /**
  * A flipbook screen: cycles through an array of textures with a smooth
- * cross-fade. Falls back to a procedural app-like texture if the asset
- * sequence isn't present yet (initial scaffold ships without PNGs).
+ * cross-fade. Procedural textures are built synchronously so the screen
+ * is never empty; if a real PNG sequence ships in /public/portal-frames/
+ * it loads asynchronously and replaces the procedural set.
  */
 export function ScreenFlipbook({
   size,
@@ -17,11 +18,16 @@ export function ScreenFlipbook({
   paused?: boolean;
   intervalMs?: number;
 }) {
-  const matRef = useRef<THREE.MeshBasicMaterial>(null);
-  const [texs, setTexs] = useState<THREE.Texture[]>([]);
-  const idxRef = useRef(0);
+  // Build procedural textures up-front so first paint is non-empty.
+  const procedural = useMemo(
+    () => [proceduralTexture(0), proceduralTexture(1), proceduralTexture(2)],
+    []
+  );
+  const [texs, setTexs] = useState<THREE.Texture[]>(procedural);
+  const [idx, setIdx] = useState(0);
   const timerRef = useRef(0);
 
+  // Try to swap in real PNG frames if present.
   useEffect(() => {
     let cancelled = false;
     const loader = new TextureLoader();
@@ -47,13 +53,7 @@ export function ScreenFlipbook({
       ];
       const results = await Promise.all(candidates.map(load));
       const real = results.filter((t): t is THREE.Texture => !!t);
-      if (cancelled) return;
-      if (real.length > 0) {
-        setTexs(real);
-      } else {
-        // Procedural fallback so the screen isn't empty in the dev loop.
-        setTexs([proceduralTexture(0), proceduralTexture(1), proceduralTexture(2)]);
-      }
+      if (!cancelled && real.length > 0) setTexs(real);
     })();
     return () => {
       cancelled = true;
@@ -65,22 +65,16 @@ export function ScreenFlipbook({
     timerRef.current += dt * 1000;
     if (timerRef.current > intervalMs) {
       timerRef.current = 0;
-      idxRef.current = (idxRef.current + 1) % texs.length;
-      if (matRef.current) matRef.current.map = texs[idxRef.current];
+      setIdx((i) => (i + 1) % texs.length);
     }
   });
 
-  useEffect(() => {
-    if (matRef.current && texs[0]) {
-      matRef.current.map = texs[0];
-      matRef.current.needsUpdate = true;
-    }
-  }, [texs]);
+  const map = texs[idx % texs.length];
 
   return (
-    <mesh>
+    <mesh renderOrder={3}>
       <planeGeometry args={size} />
-      <meshBasicMaterial ref={matRef} toneMapped={false} />
+      <meshBasicMaterial map={map} toneMapped={false} depthTest={false} />
     </mesh>
   );
 }
